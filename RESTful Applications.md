@@ -88,7 +88,6 @@ The conversion to Maven project makes managing  library references much easier.
 5. Add the dependencies shown next to the *pom.xml*. file: 
 
 		<dependencies>
-
 			<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet -->
 			<dependency>
 		    	<groupId>com.sun.jersey</groupId>
@@ -107,7 +106,7 @@ The conversion to Maven project makes managing  library references much easier.
 ### Create the Score Class
 To keep things simple, we won't add any setters or getters. Furthermore, we are going to make the properties of the Score class static. This will enable the Java virtual machine (JVM) to simulate persistence between stateless calls to the web service. 
 <div style="background-color:orange">🚨This approach will enable us to run and test the application on a single JVM. However, you should manage application state in this way only as a proof of concept. It's better to persist data with 
-[Hibernate and Java Persistence API](https://www.theserverside.com/tip/How-JPA-and-Hibernate-simplify-data-persistence) or save information to a [NoSQL](https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL) database.</div>
+<a href="https://www.theserverside.com/tip/How-JPA-and-Hibernate-simplify-data-persistence" target="_blank">Hibernate and Java Persistence API</a> or save information to a <a href="https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL" target="_blank">NoSQL</a>database.</div>
 
 1. Right click on the **src** folder, under the *Java Resources* folder.
 2. In drop-down menus select **New->Package** and enter name of your choosing. In this example we chose *com.acloudysky.score*.
