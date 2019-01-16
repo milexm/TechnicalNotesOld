@@ -1,0 +1,134 @@
+swagger: "2.0"            # Swagger version
+
+info:                     # This object provides metadata about the API.
+  version: 1.0.0            
+  title: Score Service API
+  description: A simple API score counter for an online *rock-paper-scissor* game app
+
+basePath: /            # Path relative to which all API calls will be made 
+
+# The header we defined before shows here
+paths:
+  /score:
+    get:
+      description: Returns all scores
+      operationId: getScore
+      responses:  
+        '200':
+          description: A list of all scores
+          schema:
+            type: string
+            items:
+              $ref: '#/definitions/Score'
+    put:
+      description: Update the current score
+      operationId: update
+      parameters:
+        - name: wins
+          in: path
+          required: true
+          description: The wins value to upadte
+          type: string
+        - name: ties
+          in: path
+          required: true
+          description: The ties value to upadte
+          type: string
+        - name: losses
+          in: path
+          required: true
+          description: The losses value to upadte
+          type: string
+      responses:
+        '201':
+          description:  Value updated
+          schema:
+            $ref: '#/definitions/Score'
+            
+  /score/wins:
+    get:
+      description: Returns the wins score
+      operationId: getWins
+      responses:
+        200:
+          description: Win score
+          schema:
+            $ref: '#/definitions/Wins'
+        404:
+          description: Score does not exist.
+          
+    post:
+      description: Increase the wins value
+      operationId: increaseWins
+      responses:
+        '201':
+          description: Wins increasead
+          schema:
+            $ref: '#/definitions/Wins'        
+          
+  /score/ties:
+    get:
+      description: Returns the ties score
+      operationId: getTies
+      responses:
+        200:
+          description: Ties score
+          schema:
+            $ref: '#/definitions/Ties'
+        404:
+          description: Score does not exist.
+          
+    post:
+      description: Increase the ties value
+      operationId: increaseTies
+      responses:
+        '201':
+          description: Ties increasead
+          schema:
+            $ref: '#/definitions/Ties'
+          
+  /score/losses:
+    get:
+      description: Returns the losses score
+      operationId: getLosses
+      responses:
+        200:
+          description: Losses score
+          schema:
+            $ref: '#/definitions/Losses'
+        404:
+          description: Score does not exist.
+          
+    post:
+      description: Increase the losses value
+      operationId: increaseLosses
+      responses:
+        '201':
+          description: Losses increasead
+          schema:
+            $ref: '#/definitions/Losses'
+          
+definitions:
+    Score:
+      type: object
+      properties: 
+        wins:
+          type: string
+          description: Number representing the wins score
+        losses:
+          type: string
+          description: Number representing the losses score
+        ties:
+          type: string
+          description: Number representing the ties score
+    Wins:
+      type: string
+      description: Number representing the wins score  
+  
+    Ties:
+      type: string
+      description: Number representing the ties score  
+      
+    Losses:
+      type: string
+      description: Number representing the tiee score      
