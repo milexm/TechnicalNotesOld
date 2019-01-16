@@ -21,18 +21,20 @@ If you do not have Tomcat on your machine, you will first need to download and u
 
 <img src="images/tomcat.png" width="300em" heigth="300em"  alt=""/> 
 
-#### Using Tomcat Installaltion
-You may need to change the Tomcat configuration to assure that you ae using your Tomcat installation. Follow these steps:
+#### Using Tomcat
+You may need to change the Tomcat configuration to assure that you are using your Tomcat installation. Follow these steps:
 
 1. In Eclipse, click the **Servers** tab, in the right pane, under the editor. 
 2. Stop Tomcat, if it is running.
 3. Right click on the Tomcat version you want to reconfigure. Select **Add and Remove...**.
 <img src="images/addremove.png" width="300em" heigth="300em"  alt=""/> 
 4. Select the services in the right pane and click the **Remove** button.  
+
 <img src="images/remove.png" width="300em" heigth="300em"  alt=""/> 
-6. Click **Finish**.
-7. Click **OK**.
-8. In the Server tabbed area, righ click and select **Start**.
+
+6. Click <b>Finish</b>.
+7. Click <b>OK</b>.
+8. In the Server tabbed area, righ click and select <b>Star</b>.
 9. Double clik the Tomcat version, this displays the configuration information. 
 10. In the *Server Locations* section select **Use Tomcat installation**.
 11. Save the configuration file. 
