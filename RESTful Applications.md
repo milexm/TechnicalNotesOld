@@ -30,11 +30,12 @@ You may need to change the Tomcat configuration to assure that you are using you
 <img src="images/addremove.png" width="300em" heigth="300em"  alt=""/> 
 4. Select the services in the right pane and click the **Remove** button.  
 
+
 <img src="images/remove.png" width="300em" heigth="300em"  alt=""/> 
 
-6. Click <b>Finish</b>.
-7. Click <b>OK</b>.
-8. In the Server tabbed area, righ click and select <b>Star</b>.
+6. Click **Finish**.
+7. Click **OK**.
+8. In the Server tabbed area, righ click and select <b>Start</b>.
 9. Double clik the Tomcat version, this displays the configuration information. 
 10. In the *Server Locations* section select **Use Tomcat installation**.
 11. Save the configuration file. 
