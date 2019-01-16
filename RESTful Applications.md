@@ -102,7 +102,8 @@ The conversion to Maven project makes managing  library references much easier.
 
 ### Create the Score Class
 To keep things simple, we won't add any setters or getters. Furthermore, we are going to make the properties of the Score class static. This will enable the Java virtual machine (JVM) to simulate persistence between stateless calls to the web service. 
-<div style="background-color:orange">🚨This approach will enable us to run and test the application on a single JVM. However, you should manage application state in this way only as a proof of concept. It's better to persist data with [Hibernate and Java Persistence API](https://www.theserverside.com/tip/How-JPA-and-Hibernate-simplify-data-persistence) or save information to a [NoSQL](https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL) database.</div>
+<div style="background-color:orange">🚨This approach will enable us to run and test the application on a single JVM. However, you should manage application state in this way only as a proof of concept. It's better to persist data with 
+[Hibernate and Java Persistence API](https://www.theserverside.com/tip/How-JPA-and-Hibernate-simplify-data-persistence) or save information to a [NoSQL](https://searchdatamanagement.techtarget.com/definition/NoSQL-Not-Only-SQL) database.</div>
 
 1. Right click on the **src** folder, under the *Java Resources* folder.
 2. In drop-down menus select **New->Package** and enter name of your choosing. In this example we chose *com.acloudysky.score*.
@@ -141,11 +142,11 @@ The increase methods follow a similar pattern with the exception that they are i
 The last 2 methods class enable users to get the JSON-based representation of the complete score or pass query parameters to the web service to update the static properties of the Score class. Both methods use the /score path, and both produce JSON. But the getScore method is invoked through an HTTP GET request, while the update method is invoked through a PUT.
 
 
-		package com.acloudysky.score;
-		import javax.ws.rs.*;
+	package com.acloudysky.score;
+	import javax.ws.rs.*;
 
-		@ApplicationPath("/")
-		@Path("")
+	@ApplicationPath("/")
+	@Path("")
 		public class ScoreService {
 	@GET
 	@Path("/score")
@@ -202,7 +203,7 @@ Now that you've created the ScoreService, it is time to test it. To do so, perfo
 3. Select the Tomcat server version to run on.
 4. Click **Finish**.
 5. You should have the service runnin at this location: *http://localhost:8080/ScoreService/*.
-6. In the browser window, enter **http://localhost:8080/ScoreService/scor**. You should  get the following:
+6. In the browser window, enter **http://localhost:8080/ScoreService/score**. You should  get the following:
 
 		{ "wins":"0", "losses":"0", "ties": "1"}
 		
@@ -250,7 +251,7 @@ Let's now generate the documentation for the ScoreService examaple, created eral
 - fsdfsd
 
 
-##References
+## References
 - [Step-by-step RESTful web service example in Java using Eclipse](https://www.theserverside.com/video/Step-by-step-RESTful-web-service-example-in-Java-using-Eclipse)
 - [The ServerSide](https://www.theserverside.com/)
 - [JAX-RS - Creating Resources using @ApplicationPath, @Path, @PathParam](https://www.logicbig.com/tutorials/java-ee-tutorial/jax-rs/path-annotion-resource-mapping.html)
