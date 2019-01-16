@@ -233,7 +233,10 @@ You can find the exmape at [Creating a Simple Movie Store API with Swagger](http
 You will get the following:
 ![movie_store](images/movie_store.png)
 3. In the menu bar, click **Generate Client**.
-4. In the drop-down menu, click **html2** <img src="images/generate_html.png" width="200em" height="200em" alt="movie_store"/>
+4. In the drop-down menu, click **html2** 
+
+<img src="images/generate_html.png" width="200em" height="200em" alt="movie_store"/>
+
 5. The archive *html2-client-generated.zip* is downloaded. 
 6. Unarchive it. You will get the API documentation in HTML, as you can see at [movie_docs](movie_docs/index.html).
 7. The docs also include code examples in different languages. 
@@ -247,14 +250,8 @@ Let's now generate the documentation for the ScoreService examaple, created eral
 3. Let's generate the docs in HTNL. You can find them at [score_service_docs](score_service_docs/index.html).
 
 
-
-### References
-
-- [![Generate Documentation for your APIs in minutes using Swagger Editor](images/swaggerdocs.png)](https://youtu.be/gDGIlEjVEXM?t=150 "Generate Documentation for your APIs in minutes using Swagger Editor")
-- fsdfsd
-
-
 ## References
+- - [![Generate Documentation for your APIs in minutes using Swagger Editor](images/swaggerdocs.png)](https://youtu.be/gDGIlEjVEXM?t=150 "Generate Documentation for your APIs in minutes using Swagger Editor")
 - [Step-by-step RESTful web service example in Java using Eclipse](https://www.theserverside.com/video/Step-by-step-RESTful-web-service-example-in-Java-using-Eclipse)
 - [The ServerSide](https://www.theserverside.com/)
 - [JAX-RS - Creating Resources using @ApplicationPath, @Path, @PathParam](https://www.logicbig.com/tutorials/java-ee-tutorial/jax-rs/path-annotion-resource-mapping.html)
