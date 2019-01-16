@@ -27,9 +27,10 @@ You may need to change the Tomcat configuration to assure that you are using you
 1. In Eclipse, click the **Servers** tab, in the right pane, under the editor. 
 2. Stop Tomcat, if it is running.
 3. Right click on the Tomcat version you want to reconfigure. Select **Add and Remove...**.
-<img src="images/addremove.png" width="300em" heigth="300em"  alt=""/> 
-4. Select the services in the right pane and click the **Remove** button.  
 
+<img src="images/addremove.png" width="300em" heigth="300em"  alt=""/> 
+
+4. Select the services in the right pane and click the **Remove** button.  
 
 <img src="images/remove.png" width="300em" heigth="300em"  alt=""/> 
 
