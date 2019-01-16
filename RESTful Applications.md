@@ -56,8 +56,7 @@ From version 1.1 on, JAX-RS is an official part of Java EE 6. A notable feature 
 
 #### Approach 2 - Refer to the Library
 You can do this in the **pom.xml** file if you create the service using a Maven project. In the next examples we'll use this second approach.
-<div style="background-color:lightblue">📝 You can obtain the latest Maven dependencies at this location: 
-[MVNrepository](https://mvnrepository.com/), where you search for *jersey server* and *jersey servelet*.</div> 
+<div style="background-color:lightblue">📝 You can obtain the latest Maven dependencies at this location: <a href="(https://mvnrepository.com/)" target="_blank">MVNrepository</a>, where you search for <i>jersey server</i> and <i>jersey servelet</i>.</div> 
 
 ## Create ScoreService
 The service we are going to create is a score counter for an onine *rock-paper-scissor* game app.
