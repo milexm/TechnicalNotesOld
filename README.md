@@ -5,6 +5,7 @@
 - <a href="RESTful Web Services Notes.md">RESTful Web Services Notes</a>
 - <a href="Student Book Service.md">Student Book Service</a>
 - <a href="Student Book Service Client.md">Student Book Service Client</a>
+- <a href="Python Notes.ipynb">Python Notest</a>
 
 <br/><br/>
 
