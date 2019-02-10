@@ -1,8 +1,8 @@
 # Technical Notes
 <i>Personal notes on various technical topics.</i>
 
-- <a href="RESTful Web Service Documentation.md" target="_blank">RESTful Web Service Documentation</a>
-- <a href="RESTful Web Services.md">RESTful Web Services</a>
+- <a href="RESTful Web Service Template.md" target="_blank">RESTful Web Service Template</a>
+- <a href="RESTful Web Services Notes.md">RESTful Web Services Notes</a>
 - <a href="Student Book Service.md">Student Book Service</a>
 - <a href="Student Book Service Client.md">Student Book Service Client</a>
 
