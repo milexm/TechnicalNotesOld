@@ -36,22 +36,22 @@
 }
 
 /* Marker Yellow */
-.m_warning {
+.mwarning {
   background-color: yellow;
 }
 
 /* Marker Gray */
-.m_other {
+.mother {
   background-color: lightgray
 }
 
 /* Marker Blue */
-.m_info {
+.minfo {
   color: lightblue;
 }
 
 /* Marker Orange */
-.m_danger {
+.mdanger {
   background-color: #ffdddd
 }
 
